@@ -1,0 +1,170 @@
+input:focus, select:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* home */
+#demo-session{
+    background-color: rgb(234, 234, 234);
+    padding: 5rem 3rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 60rem;
+}
+#demo-session{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+#demo-session>div{
+    width: 50%;
+}
+#demo-session h1{
+    margin-bottom: 1rem;
+}
+#demo-session span{
+    color: red;
+}
+#demo-session p{
+    margin-bottom: 1rem;
+}
+#demo-session>div:nth-child(2) input{
+    border: none;
+    width: 100%;
+}
+#demo-session>div:nth-child(2) div{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+#demo-session>div:nth-child(2) div input, #demo-session>div:nth-child(2) div select{
+    width: 49%;
+    border: none;
+}
+#demo-session div input, #demo-session>div:nth-child(2) div select{
+    padding: 0.8rem 1rem;
+    border-radius: 0.3rem;
+}
+#demo-session>div:nth-child(2) input[type=submit] {
+    background-color: rgb(255, 119, 0);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width:60rem) {
+    #demo-session{
+        width: 100%;
+        margin: 0;
+        margin-top: 3rem;
+    }
+}
+
+
+/* course */
+#course{
+    background-color:rgb(0, 0, 41);
+    color: #fff;
+}
+#course h1{
+    text-align: center;
+}
+#course-top-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 4rem 3rem;
+
+}
+#course-top-section button, #top-cornder-btn{
+    padding: 0.7rem 1.2rem;
+    background-color: rgb(45, 214, 70);
+    color: rgb(0, 0, 41);
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 10rem;
+    font-weight: 600;
+    margin: auto;
+}
+#top-cornder-btn{
+    position: absolute;
+    right: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+/* cards */
+#cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: auto 3rem;
+    padding: 1rem 0;
+}
+#cards img{
+    width: 100%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+#cards>div{
+    background-color: #fff;
+    color: rgb(0, 0, 41);
+    border-radius: 0.5rem;
+}
+#cards>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+#cards>div h3{
+    padding: 0 0.7rem;
+}
+#cards>div p{
+    margin: 0.7rem 0;
+    padding: 0 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+    #cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* register */
+#sign-up{
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: rgb(234, 234, 234);
+    padding: 2rem;
+    max-width: 768px;
+}
+#sign-up input, #sign-up button {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+#sign-up button{
+    background-color: rgb(255, 119, 0);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    padding: 1rem 0;
+}

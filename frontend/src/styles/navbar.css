@@ -1,0 +1,65 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    background-color: #fff;
+}
+nav>div:last-child{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+/* serach */
+nav input{
+    width: 35vw;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+    border: 1.8px solid;
+    background-color: rgba(240, 248, 255, 0.454);
+}
+
+nav div p:hover,nav div a:hover, nav div>ion-icon:hover{
+    color: blue;
+    cursor: pointer;
+}
+nav img, nav button{
+    cursor: pointer;
+}
+ion-icon{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+nav button{
+    padding: 0.3rem 1rem;
+    font-weight: 600;
+}
+nav button:nth-child(odd){
+    background-color: #fff;
+    color: #000;
+}
+nav button:nth-child(odd):hover{
+    background-color: #ebebeb;
+}
+nav div:last-child>button:nth-child(2){
+    background-color: #121212;
+    color: #fff;
+    border: none;
+}
+nav div:last-child>button:nth-child(2) a{
+    color: #fff;
+}
+nav button:nth-child(even):hover{
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    nav>div:nth-child(2), nav>div:nth-child(4), nav>div:nth-child(5){
+        display: none;
+    }
+}
