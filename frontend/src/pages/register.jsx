@@ -15,7 +15,7 @@ const Register = () => {
         }
 
         setLoader(true);
-        axios.post("http://localhost:8080/register", payload)
+        axios.post("https://udemy-shubham-sahoo-server.vercel.app/register", payload)
         .then(res=>{
             if(res.data.message){
                 setLoader(false);
