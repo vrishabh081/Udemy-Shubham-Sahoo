@@ -16,11 +16,9 @@ const Login = () => {
         setLoader(true);
         axios.post("https://udemy-shubham-sahoo-server.vercel.app/login", payload)
         .then(res=>{
-            console.log(res);
             if(res.data.message){
                 setLoader(false);
                 alert(res.data.message);
-                localStorage.setItem("user", JSON.stringify(res.data))
                 navigate("/")
             }
             else{
@@ -28,7 +26,7 @@ const Login = () => {
             }
         })
         .catch(err=>{
-            console.log(err)
+            // console.log(err)
             setLoader(false);
         })
     }
